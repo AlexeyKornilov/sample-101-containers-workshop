@@ -419,7 +419,7 @@ ARCH=$(detect_architecture)
 if [ "$ARCH" = "aarch64" ]; then
     dnf install -y https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_arm64/session-manager-plugin.rpm
 else
-    dnf install -y https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm
+    dnf install -y https://s3.us-east-1.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm
 fi
 ' "Failed to install Session Manager plugin"
 
